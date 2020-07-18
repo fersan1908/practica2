@@ -1,0 +1,79 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Buscador de películas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assert/normalize.css">
+    <link type="text/css" rel="stylesheet" href="assert/style.css">
+</head>
+
+<body>
+    <div class="burger" id="burger">
+        &#x2630;
+    </div>
+    <a href="practica2.html">
+        <div class="homepage" id="homepage">
+            &#128270;
+            <div class="homepagetext">
+                Buscador
+            </div>
+        </div>
+    </a>
+    <a href="favorites.html">
+        <div class="saved" id="saved">
+            &#128150;
+            <div class="savedtext">
+                Favoritas
+            </div>
+        </div>
+    </a>
+    <a href="login.html">
+        <div class="logout" id="loggout">
+            &#128281;
+            <div class="logouttext" id="logout">
+                Logout
+            </div>
+        </div>
+    </a>
+    <div class="wrap">
+        <main class="fullfilm">
+            <h1 id="title"></h1>
+
+            <img src="" alt="" class="bigpic" id="imgfullfilm">
+            <div class="mark" id="mark">Marcar como favorita &#x2764;</div>
+            <div class="fulldescription">
+                <p><strong>Descripción: </strong>
+                <span class="fulltext" id="fulldescription">
+                    
+                </span>
+                </p>
+                <p><strong>Año: </strong> 
+                    <span id="year">
+                        
+                    </span>
+                </p>
+                <p><strong>Director: </strong>
+                    <span id="directed">
+                        
+                    </span>
+                </p>
+                <p><strong>Género: </strong>
+                    <span id="genre">
+                        
+                    </span>
+                </p>
+                <p><strong>Actores: </strong>
+                    <span id="actors">
+                       
+                    </span>
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/film.js"></script>
+</body>
+
+</html>

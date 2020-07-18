@@ -1,0 +1,49 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritas - Buscador de películas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./assert/normalize.css">
+    <link type="text/css" rel="stylesheet" href="./assert/style.css">
+</head>
+
+<body>
+    <div class="burger" id="burger">
+        &#x2630;
+    </div>
+    <a href="practica2.html">
+        <div class="homepage" id="homepage">
+            &#128270;
+            <div class="homepagetext">
+                Buscador
+            </div>
+        </div>
+    </a>
+    <a href="favorites.html">
+        <div class="saved" id="saved">
+            &#128150;
+            <div class="savedtext">
+                Favoritas
+            </div>
+        </div>
+    </a>
+    <a href="login.html">
+        <div class="logout" id="loggout">
+            &#128281;
+            <div class="logouttext"id="logout">
+                Logout
+            </div>
+        </div>
+    </a>
+    <main class="results ">
+        <h1>Películas favoritas de <span id="username"></span> (<span id="favnum"></span>)</h1>
+        <div class="films" id="films">
+        </div>
+    </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./js/favorites.js"></script>
+</body>
+</html>
