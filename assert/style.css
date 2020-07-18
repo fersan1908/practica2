@@ -1,0 +1,427 @@
+body{
+    background: radial-gradient(ellipse at center, #0F0F0F 0%, #454545 100%);
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.display-none{
+    display:none !important;
+}
+
+.red{
+    color: red!important;
+}
+
+.saved, .logout, .homepage, .burger{
+    display: flex;
+    position: fixed;
+    font-size: 25px;
+    right: 25;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #eee;
+    color: black;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    overflow: hidden;
+    transition: all 400ms;
+}
+
+.saved:hover, .logout:hover, .homepage:hover{
+    width: 170px;
+    padding-left: 10px;
+}
+
+.burger{
+    padding-left: 14px;
+    display: none;
+}
+
+.homepage, .burger{
+    top:15;
+}
+
+.saved{
+    top:70;
+}
+
+.logout{
+    top: 125;
+}
+
+.savedtext, .logouttext, .homepagetext{
+    display: none;
+    width: 100%;
+    text-align: center !important ;
+    transition: all 400ms;
+}
+
+.saved:hover .savedtext, .logout:hover .logouttext, .homepage:hover .homepagetext{
+    display: inline;
+}
+
+.wrap{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.searcher{
+    width: 50%;
+    margin: 0px auto;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.formdiv{
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+
+.browserdiv, .searchdiv, .searchdivlogin, .mark{
+    background-color: #eee;
+    color: gray;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.searchdiv{
+    width: 4%;
+    cursor: pointer;
+}
+
+.searchdiv:hover{
+    color: black;
+}
+
+input[type="text"], input[type="password"]{
+    color: black;
+    width: 93%;
+    margin-left: 5px;
+    background: transparent;
+    border: 0!important;
+    font-size: 17px;
+    font-weight: 200;
+    outline: none!important;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    border: 0!important;
+    outline: none!important;
+}
+
+.browserdiv{
+    width: 85%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.pages{
+    margin: 0px auto;
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.results{
+    width: calc(100%-30px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.films{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.film{
+    height: 300px;
+    width: 17.5%;
+    border: 1px solid white;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.filmimg{
+    width: 100%;
+    height: 250px;
+}
+
+.title{
+    display:block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(155, 238, 220, 0.712);
+    color: #0F0F0F;
+    font-weight: 600;
+}
+
+
+.description p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+
+.heart{
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 0px 0px 6px #000000;
+}
+
+/*Login*/
+.wraplogin, .wrapfilm{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginbox{
+    margin: 0px auto;
+    width: 40%;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+.formdivlogin{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.formdivlogin div{
+    margin-top: 15px;
+}
+.searchdivlogin{
+    color: black;
+    width: 13%;
+    cursor: pointer;
+}
+
+
+
+/*Film*/
+.fullfilm{
+    margin: 0px auto;
+    width: 60%;
+}
+
+.bigpic{
+    display: block;
+    margin: 0px auto;
+    width: 70%;
+}
+
+.mark{
+    width: 200px;
+    margin: 15px auto;
+    transition: all 300ms; 
+    cursor: pointer;
+    color: #333
+}
+
+.mark:hover{
+    color:red;
+}
+
+
+@media (max-width: 1320px){
+    /*General*/
+    h1{
+        font-size: 35px;
+    }
+    /*Login*/
+    .loginbox{
+        width: 75%;
+    }
+
+    /*film*/
+    .fullfilm{
+        width: 80%;
+    }
+
+    /*main*/
+    .searcher{
+        width: 75%;
+    }
+}
+    
+@media (max-width: 705px){
+    /*General*/
+    h1{
+        font-size: 25px;
+    }
+
+
+    .saved, .logout, .homepage{
+        display: flex;
+        position: fixed;
+        font-size: 20px;
+        right: -190;
+        width: 170px;
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    .burger{
+        display: flex;
+        top:15;
+        cursor: pointer;
+    }
+    
+    .homepage{
+        top:70;
+    }
+    
+    .saved{
+        top:125;
+    }
+    
+    .logout{
+        top: 180;
+    }
+    
+    .savedtext, .logouttext, .homepagetext{
+        display: inline;
+    }
+    
+    .showmenu{
+        animation-name: showmenu;
+        animation-duration: 800ms;
+        animation-iteration-count: inherit;
+        transform: translateX(-105%);
+    }
+
+    @keyframes showmenu{
+        from{
+            transform: translateX(0%)
+        }
+        to{
+            transform: translateX(-105%);
+        }
+    }
+    
+    .hidemenu{
+        animation-name: hidemenu;
+        animation-duration: 800ms;
+        animation-iteration-count: inherit;
+        transform: translateX(105%);
+    }
+
+    @keyframes hidemenu{
+        from{
+            transform: translateX(-105%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+
+
+
+
+    /*Login*/
+    .wraplogin, .wrapfilm{
+        height: 100vh;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        flex-direction: row
+    }
+    .loginbox{
+        margin: 0px auto;
+        width: 100%;
+        border: none;
+    }
+    .formdivlogin{
+        width: 95%;
+    }
+    .formdivlogin div{
+        width: 100%;
+    }
+    .searchdivlogin{
+        width: 20%!important;
+    }
+    
+    /*film*/
+    .fullfilm{
+        width: calc(100%-50px);
+        display: block;
+    }
+    .fulldescription{
+        text-align: justify;
+    }
+    .mark{
+        width: 68%;
+        color: #333
+    }
+    .mark:hover{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*main*/
+    .searcher {
+        width: 90%;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .formdiv{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .searchdiv{
+        margin: 15px auto;
+        width: 20%!important;
+    }
+    .browserdiv{
+        margin: 0px auto;
+        width: 85%;
+    }
+    .film{
+        height: 300px;
+        width: 95%;
+    }
+    input[type="text"], input[type="password"] {
+        width: 90%;
+    }
+}
